@@ -4,7 +4,7 @@ COPY . /app
 WORKDIR /app
 
 RUN pip install --upgrade pip
-RUN pip install pyjwt
+RUN pip install 'pyjwt==1.7.1'
 RUN pip install flask
 RUN pip install gunicorn
 RUN pip install pytest
